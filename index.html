@@ -1,131 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/uikit.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="js/uikit.js"></script>
-    <script src="js/uikit-icons.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFORMATION VISUALIZATION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://d3js.org/topojson.v1.min.js"></script>
+  <script src="datamaps.world.hires.min.js"></script>
 
-    <title>Information Visualization</title>
-    <h1>18CSE301J</h1>
-</head>
-<body>
-<!-- Navigation Bar -->
-    <nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-visible@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
-    </div>
-    <div class="uk-navbar-right">
+    <link href="https://fonts.googleapis.com/css?family=Headland One" rel="stylesheet">
 
-        <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="mailto:" uk-scroll>Contact</a></li>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <!--<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-lightness/jquery-ui.css" type="text/css" media="all" />-->
 
-        </ul>
+  </head>
+  <body>
 
-    </div>
-</nav>
-<!-- Navigation Bar Ends  -->
+    <h1></h1>
+    <div class="content">
+      <div class="title">
+        <h1>18CSE301J</h1>
+       
+        <h2>Abhipsa Sahoo</h2>
+        <h2> RA2011003010346</h2>
+        <h2>NETFLIX Data Analysis</h2>
+        <h1><u>ASSIGNMENT 1</u></h1>
+        <h2><u>Dataset</u></h2>
+        <h3>dataset was taken from <a href="https://drive.google.com/drive/folders/1KlrCUFo49W5p9vKBR37ejdfQepwueZVg?usp=sharing>Link</a></h3>
+      </div>
 
-<!-- Navigation Bar Mobile -->
-<nav class="uk-navbar-container uk-margin-small-left uk-margin-small-right uk-hidden@m uk-margin-xlarge-left uk-margin-xlarge-right" uk-navbar uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    
-    <div class="uk-navbar-left">
-        <a href="" class="uk-navbar-item uk-logo uk-light">JohnDoe.</a>
-    </div>
-    <div class="uk-navbar-right">
+      <div>
 
-        <ul class="uk-navbar-nav uk-light">
-            <li><button uk-toggle="target: #offcanvas-nav" type="button" uk-navbar-toggle-icon></button></li>
-
-        </ul>
-
-    </div>
-</nav>
-<!-- Change This -->
-<div id="offcanvas-nav" uk-offcanvas="overlay: true">
-    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
-
-        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
-            <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
-            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
-            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-            <li class="uk-active"><a href="mailto:">Contact</a></li> <!--- change to ur email-->
-
-        </ul>
+        <iframe src="./Assignment1.pdf" frameborder="3" width="600" height="600"></iframe>
 
 
-
-
-    </div>
-</div>
-
-<!-- Navigation Bar Mobile Ends -->
-<!-- Home -->
-<section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-    <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm John Doe, a front-end web developer, <br>graphic designer, and an UI/UX designer.</h1>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
-
-
-</section>
-
-<!-- Home Ends -->
-<br>
-
-
-<hr class="uk-margin-xlarge-top uk-margin-xlarge-left uk-margin-xlarge-right">
-
-<!-- About Me -->
-<section id="about" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">About Me</h3>
-<!-- Change here to ur paragraph -->
-<p class="uk-margin-xlarge-left uk-margin-xlarge-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eleifend posuere tortor vel lobortis. Morbi pretium in sapien non suscipit. Nam ac efficitur enim. Vestibulum accumsan erat sit amet nulla commodo, nec varius felis aliquam. Aliquam suscipit mauris lacus, at euismod purus tempor aliquam. Donec varius sem nisl. Fusce augue tortor, hendrerit at elit quis, aliquet blandit eros. Nam gravida sem velit, eu placerat nunc commodo ut. <br><br>Maecenas ultricies magna nec nisi egestas, in posuere velit tincidunt. Nam quis turpis non ligula dapibus bibendum sit amet at felis. Vestibulum ornare tempor nulla, quis sodales ex consequat vel. Morbi sollicitudin ligula eget mattis euismod. Nulla scelerisque malesuada arcu a vulputate. Phasellus ac lectus consequat, eleifend libero id, tincidunt lectus. Sed tempus gravida odio, sed semper neque aliquet imperdiet.</p>
-<a href="" class="uk-margin-xlarge-left uk-light uk-button-text" uk-icon="instagram"></a> &nbsp;<a href="" class="uk-light uk-button-text" uk-icon="dribbble"></a> &nbsp;<a href="" class="uk-button-text uk-light" uk-icon="github"></a> &nbsp;<a href="" class=" uk-light uk-button-text" uk-icon="linkedin"></a>
-
-<!-- About Me Ends -->
-
-
-
-
-</section>
-
-<!-- Projects Section -->
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-<section id="projects" class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
-<h3 class="uk-margin-xlarge-left uk-light">Projects</h3>
-<p class="uk-margin-xlarge-left">Projects that i've been working on</p>
-
-<div class="uk-margin-xlarge-left uk-margin-xlarge-right">
-    <!-- Change all of this to ur projects -->
-    <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-        <h4>Project Name</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <a class="uk-button-text uk-text-decoration-none" href="">
-            <span uk-icon="icon: link">
-            </span> Website Link </a>
+      </div>
+      <div class="main2">
+        <br>
+        <h1><u>ASSIGNMENT 2</u></h1>
+        <h3>TABLEAU Project</h3>
+        <div class="card">
+          <h1 style="margin: 3%">Description of the Dataset</h1>
+          <p class="desc">
+            The dataset has been taken from the Airbnb website. We will use the
+            listings.csv file of New York City, NY (2019), which describes the
+            listing activity and its other metrics. All information about hosts,
+            geographical availability, and price has been included to make
+            exciting visualizations.
+            <br /><br />Done under guidance of Dr. Parthiban Sir for Information
+            Visualisation - 18CSE301J
+          </p>
         </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>Project Name</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <a class="uk-button-text uk-text-decoration-none" href="">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div></div>
+      </div>
+      <div class="footer">
+        <p>
+          ***This dataset was taken from
+          <a href="http://insideairbnb.com/get-the-data/"> Link to Dataset</a>
+        </p>
+      </div>
+      <!-- <button class="visualise" onclick="onClick()">Visualise</button> -->
+      <div
+        class="tableauPlaceholder"
+        id="viz1677680446857"
+        style="position: relative"
+      >
+        <noscript
+          ><a href="#"
+            ><img
+              alt="AirBnB Dashboard "
+              src="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirbnbTutorial_16776768463250&#47;AirBnBTutorial&#47;1_rss.png"
+              style="border: none" /></a></noscript
+        ><object class="tableauViz" style="display: none">
+          <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+          <param name="embed_code_version" value="3" />
+          <param
+            name="path"
+            value="views&#47;AirbnbTutorial_16776768463250&#47;AirBnBTutorial?:language=en-US&amp;:embed=true"
+          />
+          <param name="toolbar" value="yes" />
+          <param
+            name="static_image"
+            value="https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ai&#47;AirbnbTutorial_16776768463250&#47;AirBnBTutorial&#47;1.png"
+          />
+          <param name="animate_transition" value="yes" />
+          <param name="display_static_image" value="yes" />
+          <param name="display_spinner" value="yes" />
+          <param name="display_overlay" value="yes" />
+          <param name="display_count" value="yes" />
+          <param name="language" value="en-US" />
+        </object>
+      </div>
+      <script type="text/javascript">
+        var divElement = document.getElementById("viz1677680446857");
+        var vizElement = divElement.getElementsByTagName("object")[0];
+        if (divElement.offsetWidth > 800) {
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+        } else if (divElement.offsetWidth > 500) {
+          vizElement.style.width = "100%";
+          vizElement.style.height = divElement.offsetWidth * 0.75 + "px";
+        } else {
+          vizElement.style.width = "100%";
+          vizElement.style.height = "1527px";
+        }
+        var scriptElement = document.createElement("script");
+        scriptElement.src =
+          "https://public.tableau.com/javascripts/api/viz_v1.js";
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+      </script>
+    </div>
 
-
-
-    <br>
-
-
-</section>
-<hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
-</div>
-<!-- Projects Section Ends -->
+    <!-- ASSIGNMENT 3 -->
     
-</body>
+
+    <div tyle="background-color: rgba(0, 120, 167, 1);">
+      <h1>ASSIGNMENT 3</h1>
+      <h1>
+        Dataset was taken from <a href="https://drive.google.com/drive/u/2/folders/1Wttd3hx8lIIX-muRD4WyN3wWTJtIl1_2">Link</a>
+      </h1>
+      <h2>D3.js</h2>
+      <h2 style="color: blue !important;">Meteorite Sightings from the year 2000 - 2010</h2>
+      <button class="accordion">Read Me</button>
+     <div class="panel">
+        <h3>Dataset from: <a href="https://www.kaggle.com/nasa/meteorite-landings"><img src="MetSoc.jpg" height="50" width="100"/></a></h3>
+        <p>The Meteoritical Society collects data on meteorites that have fallen to Earth from outer space. This dataset includes the location, mass, composition, and fall year for over 8,000 (from 2000 - 2010) meteorites that have struck our planet.</p>
+        <strong>Note: </strong> <p><ul> <li>The incomplete information (geographic coordinates, year, meteorite mass) was erased from the dataset.</li> 
+       <li><strong>Fell:</strong> The meteorite's fall was observed.</li><li><strong>Found:</strong> The meterorite's fall was not observed.</li></ul></p>
+     </div>
+     
+     <h4><button class="button1" onclick="window.location.href='stat.html'">Click here for Meteorite Stats</button></h4>
+     
+       <span style="color: blue !important;"><strong>Meteorite Sightings in the year</strong> (hover over the map to obtain information):</span> <!-- <span id="year"></span> -->
+       <p style="color: blue !important;">The <i style="color: rgb(255, 218, 41);">total count</i> of meteorite sightings: <span id="count" style="color: rgb(255, 218, 41);"></span></p>
+       <div id="container1" style="position: relative; width: 90%; max-height: 100%;">
+         
+         <span style="float:left; color:blue !important;">Use the slider to change the <i style="color: rgb(255, 218, 41);">year:</i></span>
+         <div id="sliderContainer" style="color: rgb(255, 218, 41);">
+           <input title="Year selector:" id="timeslide" autocomplete="off" type="range" min="0" max="11" value="0" step="1"/><br>
+           <span id="range">Off</span>
+         </div>
+          <p style="float:right; color: blue;">Found: <span class="dot2"></span></p>
+          <p style="float:right; margin-right: 2%; color: blue;">Fell: <span class="dot1"></span></p>
+       </div>
+     
+     
+       <script src="interactive.js"></script>
+      <script>
+     var acc = document.getElementsByClassName("accordion");
+     var i;
+     
+     for (i = 0; i < acc.length; i++) {
+         acc[i].addEventListener("click", function() {
+             this.classList.toggle("active");
+             var panel = this.nextElementSibling;
+             if (panel.style.display === "block") {
+                 panel.style.display = "none";
+             } else {
+                 panel.style.display = "block";
+             }
+         });
+     }
+     </script>
+    </div>
+    <!-- Assignment 3 -->
+<div style="text-align: center;">
+  <h1><u>ASSIGNMENT 3</u></h1>
+  <h2><u>Python -Plotly</u></h2>
+  <h3>Dataset was taken from Plotly <a href="https://plotly.com/python-api-reference/generated/plotly.express.data.html">inbuit datasets</a></h3>
+
+<img src="./image1.png" alt="NOT FOUND" height="500" width="500">
+<img src="./image2.png" alt="NOT FOUND" height="500" width="500">
+
+</div>
+
+    <style>
+      body {
+        display: block;
+        text-align: center;
+      }
+      .tableauPlaceholder {
+        margin: auto;
+      }
+
+      .main {
+        display: none;
+        color: white;
+      }
+
+      .desc {
+        text-align: center;
+        font-size: 25px;
+        margin: 5%;
+      }
+
+      .list1,
+      li {
+        text-align: left;
+        margin: 2%;
+      }
+
+      .main2 {
+        margin: auto;
+        width: 75%;
+      }
+
+      .card {
+        text-align: center;
+        padding: 1% 0;
+        color: black;
+        border-radius: 20px;
+        font-size: 15px;
+      }
+
+      .visualise {
+        margin: 2%;
+        padding: 1% 2%;
+        font-size: 24px;
+        color: white;
+        border-radius: 15px;
+        border: none;
+        background-color: #04aa6d;
+      }
+
+      .visualise:hover {
+        background-color: #015a39;
+      }
+    </style>
+
+    <script type="text/javascript">
+      var divElement = document.getElementById("viz1677572241242");
+      var vizElement = divElement.getElementsByTagName("object")[0];
+      vizElement.style.width = "1000px";
+      vizElement.style.height = "827px";
+      var scriptElement = document.createElement("script");
+      scriptElement.src =
+        "https://public.tableau.com/javascripts/api/viz_v1.js";
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+
+      function onClick() {
+        document.getElementById("data").style.display = "flex";
+      }
+    </script>
+  </body>
 </html>
