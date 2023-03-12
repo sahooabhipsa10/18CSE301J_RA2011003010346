@@ -1,234 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+	<head>
+		<script type="text/javascript" src="https://d3js.org/d3.v3.js""></script>
+		<style>
+			body{ font: Arial 12px; text-align: center;}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" type="image/png" href="0x0.png" />
-  <title>
-    Information Visualization Project
-  </title>
-  <meta name="description" content="Add small description of yourslef.">
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
-  <link rel="stylesheet" href="index.css" />
-</head>
+			.link {
+			  stroke: #ccc;
+			}
 
-<body>
-
-  <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-       
-          <span>Information Visualization (18CSE301J)</span>
-        </h1>
-        <br>
-
-        <hr style="width:175px;height:3px;border-width:0;color:#ff3258;background-color:#ff3258">
-    
-        <p style="font-size:50px">ABHIPSA SAHOO</p>
-        <h4>RA2011003010346</h4>
-        <br>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
-      </div>
-    </div>
-  </header>
-
-  <main role="main">
-
-
-
-    <section class="work" id="work">
-      <div class="row">
-        <h2>Projects</h2>
-
-        <div class="work__box">
-          <div class="work__text">
-            <h3>Dataset Report</h3>
-            <p>
-              A report on the Dataset for Autism Spectrum Disorder Screening and its correlation to Behavioral Traits.
-            </p>
-            <p>
-              You can find the dataset <a href="https://drive.google.com/drive/folders/1KlrCUFo49W5p9vKBR37ejdfQepwueZVg?usp=sharing" >here.
-            </p>
-
-            <div class="work__links">
-              <a href="https://drive.google.com/drive/folders/1KlrCUFo49W5p9vKBR37ejdfQepwueZVg?usp=share_link" class="link__text">
-                View PDF Here. <span>&rarr;</span>
-              </a>
-              <a href="https://drive.google.com/drive/folders/1KlrCUFo49W5p9vKBR37ejdfQepwueZVg?usp=share_link">
-                <img src="drive.png" class="work__code" title="View Source Code" alt="GitHub">
-              </a>
-            
-            </div>
-          </div>
-          <div class="work__image-box">
-            <iframe src="report.pdf" width="100%" height="500px">
-            </iframe>
-            
-          </div>
-        </div>
-        
-
-
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Tableau Project</h3>
-              <p>
-                Data Visualization for Netflix Dataset using Tableau.
-              </p>
-              <p>
-                You can find the dataset <a href="https://drive.google.com/drive/folders/1KlrCUFo49W5p9vKBR37ejdfQepwueZVg?usp=sharing" >here.
-              </p>
-              
-              <div class="work__links">
-                <a href="https://public.tableau.com/views/NetflixDashboard_16785106012030/Netflix?:language=en-US&:display_count=n&:origin=viz_share_link" target="_blank" class="link__text">
-                  View Dashboard Here. <span>&rarr;</span>
-                </a>
-                <a href="https://public.tableau.com/views/NetflixDashboard_16785106012030/Netflix?:language=en-US&:display_count=n&:origin=viz_share_link">
-                  <img src="tab.png" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-
-              </div>
-            </div>
-            <div class="work__image-box">
-              <div class='tableauPlaceholder' id='viz1678516845733' style='position: relative'><noscript><a href='#'><img alt='Netflix ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NetflixDashboard_16785106012030&#47;Netflix&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='NetflixDashboard_16785106012030&#47;Netflix' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ne&#47;NetflixDashboard_16785106012030&#47;Netflix&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1678516845733');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='2627px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Python Project</h3>
-              <p>
-                Netflix Data Visualization using Python and its various libraries.
-              </p>
-
-              <div class="work__links">
-                <a href="https://github.com/sahooabhipsa10/18CSE301J_RA2011003010346/blob/main/netflixEDA.ipynb" class="link__text">
-                  View Code Here. <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/sahooabhipsa10/18CSE301J_RA2011003010346/blob/main/netflixEDA.ipynb">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="imgg.png" class="work__image" alt="Project 1" />
-            </div>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>D3 Project</h3>
-              <p>
-                This is a D3 vizualization for the dataset.
-              </p>
-              <p>
-                This is a Visualization for the social interactions between all the characters of the show Game of Thrones.
-              </p>
-              <div>
-                
-              </div>
-
-              <div class="work__links">
-                <a href="https://github.com/sahooabhipsa10/18CSE301J_RA2011003010346/blob/main/d3.html" class="link__text">
-                  View Code <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/sahooabhipsa10/18CSE301J_RA2011003010346/blob/main/d3.html">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <iframe src="d3.html" style="background-color:white;" width="100%" height="500px">
-              </iframe>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
- 
-
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <p>
-              I am a 3rd Year Computer Science Engineering Student,as well as a Machine Learning and Data Science Enthusiast. In this course- Information Visualization, we have learned ho to visualize data in Tableau, Python and D3. We also learned about datasets and data sources. The object of this website is to display the knowledge and projects done throughout the semester.
-            </p>
-            <a href="https://github.com/sahooabhipsa10" class="btn">Github</a>
-          </div>
-
-          <div class="about__photo-container">
-            <img class="about__photo" src="dp1.jpg" style="width:450px;height:400px" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-
-  <section class="contact" id="contact">
-    <div class="row">
-      <h2>Get in Touch</h2>
-      <div class="contact__info">
-      
-        <a href="as1905@srmist.edu.in" class="btn">as1905@srmist.edu.in</a>
-        <a href="https://www.linkedin.com/in/abhipsa-sahoo-4487ab238/" class="btn">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      
-      <ul class="footer__social-links">
-
-        <li class="footer__social-link-item">
-          <a href="https://github.com/sahooabhipsa10" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/abhipsa-sahoo-4487ab238/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
-      </ul>
-      <p>
-        &copy; 2023 - Abhipsa Sahoo
-      </p>
-    </footer>
-    
-
-
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
-  </a>
-  <script src="./index.js"></script>
-</body>
-
+			.node text {
+			  pointer-events: none;
+			  font: sans-serif;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+	<script type="text/javascript">
+	//Set margins and sizes
+	var margin = {
+		top: 20,
+		bottom: 50,
+		right: 30,
+		left: 50
+	};
+	var width = 960 - margin.left - margin.right;
+	var height = 700 - margin.top - margin.bottom;
+	//Load Color Scale
+	var c10 = d3.scale.category10();
+	//Create an SVG element and append it to the DOM
+	var svgElement = d3.select("body")
+						.append("svg").attr({"width": width+margin.left+margin.right, "height": height+margin.top+margin.bottom})
+						.append("g")
+						.attr("transform","translate("+margin.left+","+margin.top+")");	
+	//Load External Data
+	d3.json("got_social_graph.json", function(dataset){
+		//Extract data from dataset
+		var nodes = dataset.nodes,
+			links = dataset.links;
+		//Create Force Layout
+		var force = d3.layout.force()
+						.size([width, height])
+						.nodes(nodes)
+						.links(links)
+						.gravity(0.05)
+						.charge(-200)
+						.linkDistance(200);
+		//Add links to SVG
+		var link = svgElement.selectAll(".link")
+					.data(links)
+					.enter()
+					.append("line")
+					.attr("stroke-width", function(d){ return d.weight/10; })
+					.attr("class", "link");
+		//Add nodes to SVG
+		var node = svgElement.selectAll(".node")
+					.data(nodes)
+					.enter()
+					.append("g")
+					.attr("class", "node")
+					.call(force.drag);
+		//Add labels to each node
+		var label = node.append("text")
+						.attr("dx", 12)
+						.attr("dy", "0.35em")
+						.attr("font-size", function(d){ return d.influence*1.5>9? d.influence*1.5: 9; })
+						.text(function(d){ return d.character; });
+		//Add circles to each node
+		var circle = node.append("circle")
+						.attr("r", function(d){ return d.influence/2>5 ? d.influence/2 : 5; })
+						.attr("fill", function(d){ return c10(d.zone*10); });
+		//This function will be executed for every tick of force layout 
+		force.on("tick", function(){
+			//Set X and Y of node
+			node.attr("r", function(d){ return d.influence; })
+				.attr("cx", function(d){ return d.x; })
+				.attr("cy", function(d){ return d.y; });
+			//Set X, Y of link
+			link.attr("x1", function(d){ return d.source.x; })
+			link.attr("y1", function(d){ return d.source.y; })
+			link.attr("x2", function(d){ return d.target.x; })
+			link.attr("y2", function(d){ return d.target.y; });
+			//Shift node a little
+		    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+		});
+		//Start the force layout calculation
+		force.start();
+	});
+	</script>
+	</body>
 </html>
-
-
-
-		
